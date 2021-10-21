@@ -84,9 +84,9 @@ print(menu_save)
 print(price_save)
 
 
-#################################
+######################################
 ## 3. 주문 메뉴와 금액 정산 및 출력 ##
-#################################
+######################################
 
 # Total 주문 금액 계산
 total_price = 0 # Total 주문 금액
@@ -95,10 +95,10 @@ for price in price_save.values():
     total_price += price
 
 print('■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■')
-print('■■ 고객님이 주문하신 메뉴는')
-for menu in enumerate(menu_save.values()):
-    print('□■ {}. {}' .format(i+1, menu))
-print('■■ 으로 총 주문금액은 {} 원 입니다' .format(total_price))
+print('■■ 고객님이 주문하신 메뉴는 ')
+for i, menu in enumerate(menu_save.values()):
+    print('□■ {}. {}'.format(i+1, menu))
+print('■■ 으로 총 주문금액은 {}원 입니다.'.format(total_price))
 print('■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■')
 print('■■ 이용해주셔서 감사합니다. 또 방문해주세요 :)')
 print('■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■')
